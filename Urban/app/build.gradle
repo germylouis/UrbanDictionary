@@ -25,6 +25,9 @@ android {
     kapt {
         generateStubs = true
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {

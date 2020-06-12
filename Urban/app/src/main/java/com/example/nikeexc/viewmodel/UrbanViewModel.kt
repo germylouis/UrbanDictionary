@@ -27,7 +27,7 @@ class UrbanViewModel constructor(private val repository: UrbanRepository) : View
         get() = errorMutableLiveData
 
 
-    private fun getWords(word: String) {
+    fun getWords(word: String) {
 
         repository
             .getDefinitionsList(word)
